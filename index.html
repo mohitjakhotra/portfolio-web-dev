@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+   
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+             body{
+                  background-color: #1F2833;
+                  font-family: "Baloo Tamma 2", cursive;
+                  
+                  overflow-x: hidden;
+                  
+                  }
+
+            .m-heading{
+                  font-family: "Roboto Slab", serif;
+                       }
+            .navigation-link{
+              border: 2px solid transparent;
+              
+
+            }
+            .navigation-link:hover{
+              text-decoration: none;
+              border-bottom: 2px solid #f5ba09;
+              border-top: 2px solid #f5ba09;
+              transition: 0.9s ease;
+            }
+            .main-container{
+              padding-top: 60px;
+              min-height: 100vh;
+              
+              
+            }
+            .main_row{
+              display: flex;
+              justify-content: end;
+              align-items: center;
+              padding-left: 200px;
+            }
+            .main_row img{
+              width: auto;
+              height: 100vh;
+              padding-left: 0px;
+              padding-top: 5px;
+              position: relative;
+              left: -240px;
+              
+            }
+           #aboutme{
+             background-color: rgba(255,255,255, 0.2) ;
+            
+
+             border-radius: 0.5rem;
+           }
+           #menu{
+            right: -470px;
+           }
+          .card{
+            border-bottom: 8px solid #f5ba09;
+          }
+          #contact{
+            background-color:  rgba(255,255,255, 0.2);
+          }
+          .media_link{
+            padding: 1rem;
+            max-width: 15rem;
+            margin-left: 1rem;
+            border: 2px solid #f5ba09;
+            border-radius: 0.5rem;
+
+          }
+         
+            
+    </style>
+  </head>
+ <body>
+   <div class="container pt-3">  
+    <div class="row">
+      <div class="col-6 d-flex justify-content-start align-items-center">
+      <nav class="navbar navbar-expand-sm fixed-top" style="background-color: #1F2833;">
+        
+        <i class="fas fa-laptop-code fa-2x text-warning pb-3" id="logo"></i>
+        <a class="navbar-brand" href="#home" id="logo"><h5 class="text-white d-inline pl-3"> Web-dev-portfolio </h5></a>
+    
+          <div class="col-6 pt-2" id="menu">
+            <div class="row">
+          <div class="col-3">
+            <a href="#aboutme" class="text-white navigation-link">About me</a>
+          </div>
+          <div class="col-3">
+           <a href="#skills" class="text-white navigation-link">Skills</a>
+         </div>
+         <div class="col-3">
+           <a href="#carouselExampleIndicators" class="text-white navigation-link">Gallery</a>
+         </div>
+         <div class="col-3">
+           <a href="#contact" class="text-white navigation-link">Contact</a>
+         </div>
+        </div>
+        </div>
+       
+      </nav>
+      </div>
+    </div>
+      </div>
+       
+  
+   <div class="main-container" id="home">
+     <div class="row main_row">
+       <div class="col-6 name">
+         <h2 class="text-white">Hello, I'm</h2>
+         <h1 class="text-warning m-heading">Mohit Jakhotra</h1>
+         <h2 class="text-white">Python Tutor / Web Developer</h2>
+       </div>
+       <div class="col-6">
+         <img src="graphic/image3.png" />
+       </div>
+    
+     </div>
+   </div>
+   <div id="aboutme" class="container p-5" >
+     <div class="row">
+       <div class="col-6">
+         <img src="graphic/image4.svg" class="img-fluid" alt="" />
+       </div>
+       <div class="col-6 pl-5 pt-5 pb-5" style="padding-top: 100px;">
+         <h3 class="text-warning m-heading">About me</h3>
+         <p class="text-white">
+            Hello, I hope you are doing great !<br> I'm <b  class='text-warning m-heading'>MOHIT JAKHOTRA</b>.
+            <br>I'm currently pursuing BBACA from <b class="text-warning">BRIHAN MAHARASHTRA COLLEGE OF COMMERCE.</b>
+            <br>I love to code. Preferably i like web-development because you get to code and show your creativity skills.
+                Apart from coding i love music, singing and i also play guitar and keyboard.
+                
+
+ 
+
+         </p>
+        
+
+       </div>
+     </div>
+   </div>
+   <div id="skills" class="container mt-3 pt-5">
+     <h1 class="text-warning mb-3 pb-2" >My Skills</h1>
+     <div class="row">
+       <div class="col-4 mb-5 ml-6 ">
+        <div class="card" style="width: 18rem; height: 29rem;">
+          <img class="card-img-top p-3" src="graphic/python.svg" alt="Card image cap" style="height: 13rem;">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Intermediate level of experience. I can teach python to 11th and 12th CBSE students</p><br><br>
+            <a href="https://mohitjakhotra.pythonanywhere.com/" class="btn btn-warning" target="_blank">See Project</a>
+        </div>
+       </div>
+     </div>
+     <div class="col-4 mb-5 ml-6 ">
+      <div class="card" style="width: 18rem; height: 29rem;">
+        <img class="card-img-top p-3" src="graphic/c++.svg" alt="Card image cap" style="height: 13rem;">
+        <div class="card-body">
+          <h5 class="card-title">C++</h5>
+          <p class="card-text">Studied C++ during my high school, and also in BCA first year.</p>
+          
+      </div>
+     </div>
+   </div>
+   <div class="col-4 mb-5 ml-6 ">
+    <div class="card" style="width: 18rem; height: 29rem;">
+      <img class="card-img-top p-3" src="graphic/webdev.svg" alt="Card image cap" style="height: 13rem;">
+      <div class="card-body">
+        <h5 class="card-title">WEB DEVELOPMENT</h5>
+        <p class="card-text"><b class="text-warning">Intermediate in HTML, CSS , Bootstrap.</b> Basic in Javascript. I have completed <b class="text-warning">Responsive Web Design </b>certification from <a href="https://www.freecodecamp.org/learn" class="text-warning" target="_blank">freecodecamp.org</a> </p>
+        <a href="https://www.freecodecamp.org/certification/mohitjakhotra/responsive-web-design" class="btn btn-warning" target="_blank">See Certification</a>
+    </div>
+   </div>
+ </div>
+ <div class="col-4 mb-5 ml-6 ">
+  <div class="card" style="width: 18rem; height: 29rem;">
+    <img class="card-img-top p-3" src="graphic/guitar.png" alt="Card image cap" style="height: 13rem;">
+    <div class="card-body">
+      <h5 class="card-title">MUSIC</h5>
+      <p class="card-text">I love to sing. I also play musical instruments like GUITAR & KEYBOARD</p>      
+  </div>
+ </div>
+</div>
+<div class="col-4 mb-5 ml-6 ">
+  <div class="card" style="width: 18rem; height: 29rem;">
+    <img class="card-img-top p-3" src="graphic/database.svg" alt="Card image cap" style="height: 13rem;">
+    <div class="card-body">
+      <h5 class="card-title">DATABASE and BACKEND </h5>
+      <p class="card-text">I have learned and practiced MYSQL DATABASES in my BCA first year and also during my high school studies. I also have basic knowledge of DJANGO FRAMEWORK.</p>      
+  </div>
+ </div>
+</div>
+<div class="col-4 mb-5 ml-6 ">
+  <div class="card" style="width: 18rem; height: 29rem;">
+    <img class="card-img-top p-3" src="graphic/php-logo.svg" alt="Card image cap" style="height: 13rem;">
+    <div class="card-body">
+      <h5 class="card-title">PHP</h5>
+      <p class="card-text">Very basic knowledge of PHP and still learning.</p>      
+  </div>
+ </div>
+</div>
+
+</div>
+   </div>
+
+
+<!--gallery -->
+
+<div class="container pt-3 pb-3" style="border-radius: 0.5rem;">
+  <h1 class="text-warning mb-3 pb-2" >Gallery</h1>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://www.freecodecamp.org/certification/mohitjakhotra/responsive-web-design" target="_blank">
+      <img class="d-block w-100" src="gallery/certificate.png" alt="First slide" >
+    </a>
+      
+    </div>
+    <div class="carousel-item">
+      <a href="https://mohitjakhotra.pythonanywhere.com/" target="_blank">
+      <img class="d-block w-100" src="gallery/djnago.png" alt="Second slide"></a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://www.bmcc.ac.in/" target="_blank">
+      <img class="d-block w-100" src="gallery/bmcc.jpeg" alt="Third slide"></a>
+    </div>
+    <div class="carousel-item">
+      <a href="https://bronzyyy.netlify.app/" target="_blank">
+      <img class="d-block w-100" src="gallery/project.png" alt="Third slide"></a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<!--gallery-->
+
+<!--contact -->
+<div id="contact" class="container-fluid p-4">
+<div class="container text-white">
+  <h4 class="text-warning">You can get in touch with me using.....</h4>
+  <h1 class="m-heading"> Let's be friends</h1>
+  <div class="row pt-5">
+    
+    <div class="col-3 media_link btn" >
+      <a href="https://www.instagram.com/mohitjakhotra/" style="text-decoration: none;" target="_blank">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-start">
+            <h3 class="pt-2 m-0 text-white">Instagram</h3>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+          <i class="fab fa-instagram fa-2x text-secondary"></i>
+        </div>
+      </div>
+    </a>
+    </div>
+  
+   
+      <div class="col-3 media_link btn" >
+        <a href="tel:+919607760670" style="text-decoration: none;" target="_blank">
+        <div class="row">
+          <div class="col-6 d-flex justify-content-start">
+              <h3 class="pt-2 m-0 text-white">Contact </h3>
+          </div>
+          <div class="col-6 d-flex justify-content-end">
+            <i class="fas fa-phone fa-2x text-secondary"></i> 
+          </div>
+        </div>
+      </a>
+      </div>
+      
+      
+        <div class="col-3 media_link btn" >
+          <a href="https://github.com/mohitjakhotra" style="text-decoration: none;" target="_blank">
+          <div class="row">
+            <div class="col-6 d-flex justify-content-start">
+                <h3 class="pt-2 m-0 text-white">Github</h3> 
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <i class="fab fa-github fa-2x text-secondary"></i> 
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-3 media_link btn" >
+          <a href="https://www.youtube.com/channel/UCCGnJmficqyl21Gp6HKBQJw" style="text-decoration: none;  " target="_blank">
+          <div class="row">
+            <div class="col-6 d-flex justify-content-start">
+                <h3 class="pt-2 m-0 text-white">Youtube</h3> 
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <i class="fab fa-youtube fa-2x text-secondary"></i> 
+            </div>
+          </div>
+        </a>
+        </div>
+        
+  </div>
+</div>
+</div>
+
+
+
+<footer>
+      <div class="container text-muted text-center py-3 mt-5 ">
+        <h5>
+          This site is for college assignment purpose 2021 | <a href="#home" class="text-white">MOHIT JAKHOTRA</a>
+        </h5>
+      </div>
+</footer>
+ </body>
+</html>
